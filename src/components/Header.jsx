@@ -1,4 +1,4 @@
-import { Trophy } from "lucide-react"
+import { Trophy } from "lucide-react";
 
 const Header = () => {
   return (
@@ -12,18 +12,23 @@ const Header = () => {
           <nav>
             <ul className="flex space-x-4">
               <li>
+                <a href="/" className="hover:underline">
+                  Home
+                </a>
+              </li>
+              <li>
                 <a href="#features" className="hover:underline">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/login" className="hover:underline">
                   Login
                 </a>
               </li>
               <li>
-                <a href="/register" className="hover:underline">
-                  Register
+                <a href="/profile" className="hover:underline">
+                  Profile
                 </a>
               </li>
             </ul>
@@ -31,8 +36,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
-
+export default Header;
